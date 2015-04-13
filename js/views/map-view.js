@@ -1,12 +1,18 @@
 /*global $ */
 /*jshint unused:false */
 var app = app || {};
-var ENTER_KEY = 13;
-var ESC_KEY = 27;
 
-$(function () {
+(function ($){
 	'use strict';
 
-	// kick things off by creating the `App`
-	new app.AppView();
-});
+      initialize: function() {
+        var mapOptions = {
+          center: { lat: -34.397, lng: 150.644},
+          zoom: 8
+        };
+        var map = new google.maps.Map(document.getElementById('map-canvas'),
+            mapOptions);
+      }
+      google.maps.event.addDomListener(window, 'load', initialize);
+  
+})(jQuery);
