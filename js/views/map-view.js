@@ -11,12 +11,12 @@ var map = new google.maps.Map(document.getElementById('map-canvas'),
     mapOptions);
 
 var request = {
-    location: athens,
+    location: mapOptions,
     radius: '500',
     types: ['store']
   };
 
- service = new google.maps.places.PlacesService(map);
+  service = new google.maps.places.PlacesService(map);
  service.nearbySearch(request, callback);
 }
 
