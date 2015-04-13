@@ -2,9 +2,6 @@
 /*jshint unused:false */
 var app = app || {};
 
-function (){
-	'use strict';
-
        function initialize() {
         var mapOptions = {
           center: { lat: -34.397, lng: 150.644},
@@ -15,4 +12,3 @@ function (){
       }
       google.maps.event.addDomListener(window, 'load', initialize);
   
-};
