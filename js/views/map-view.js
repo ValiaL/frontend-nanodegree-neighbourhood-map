@@ -5,7 +5,7 @@ var app = app || {};
 (function ($){
 	'use strict';
 
-      initialize: function() {
+       function initialize() {
         var mapOptions = {
           center: { lat: -34.397, lng: 150.644},
           zoom: 8
