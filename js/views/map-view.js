@@ -2,7 +2,7 @@
 /*jshint unused:false */
 var app = app || {};
 
-(function ($){
+function (){
 	'use strict';
 
        function initialize() {
@@ -15,4 +15,4 @@ var app = app || {};
       }
       google.maps.event.addDomListener(window, 'load', initialize);
   
-})(jQuery);
+};
