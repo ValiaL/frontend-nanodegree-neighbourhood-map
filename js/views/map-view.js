@@ -8,7 +8,7 @@ var model = {
             center: { lat: 37.995207, lng: 23.763363},
             zoom: 16
             } 
-    }                  
+    };              
 
 
  var ViewModel = function(){
@@ -17,7 +17,6 @@ var model = {
            *   to refer to the root object easily
           */
           var self=this;
-
           /**
            * An array of google.maps.Marker() objects
            *   used by self.setNearByMarkers() to set
@@ -41,9 +40,9 @@ var model = {
 
         var marker = new google.maps.Marker({
 
-             position: {model.mapOptions.center.lat,model.mapOptions.center.lng},
-             map: self.map,
-             title: model.mapOptions.name
+             this.position: {model.mapOptions.center.lat,model.mapOptions.center.lng},
+             this.map: self.map,
+             this.title: model.mapOptions.name
             });
 
       }
