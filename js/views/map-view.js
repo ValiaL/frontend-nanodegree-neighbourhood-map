@@ -4,7 +4,7 @@ var app = app || {};
 
 var model = {
        name : 'Yellow Cafe',
-       mapOptions : {
+       mapOptions = {
             center: { lat: 37.995207, lng: 23.763363},
             zoom: 16
             } 
