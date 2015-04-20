@@ -4,7 +4,7 @@ var app = app || {};
 
        function initialize() {
         var mapOptions = {
-          center: { lat: 37.975892, lng: 37.975892},
+          center: { lat: 37.975892, lng: 23.733990},
           zoom: 8
         };
         var map = new google.maps.Map(document.getElementById('map-canvas'),
