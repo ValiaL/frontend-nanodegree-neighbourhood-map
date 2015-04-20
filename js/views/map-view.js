@@ -40,7 +40,7 @@ var model = {
 
         var marker = new google.maps.Marker({
 
-             this.position: {model.mapOptions.center.lat,model.mapOptions.center.lng},
+             this.position: {lat: 37.995207, lng: 23.763363},
              this.map: self.map,
              this.title: model.mapOptions.name
             });
