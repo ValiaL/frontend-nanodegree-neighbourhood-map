@@ -7,13 +7,13 @@ function latlng(lat,lng) {
   return new google.maps.LatLng(lat,lng);
 }
 */
-var model = {
+/*var model = {
        name : 'Yellow Cafe',
-      var mapOptions = {
+       mapOptions = {
             center: { lat: 37.995207, lng: 23.763363},
             zoom: 16
             } 
-    };              
+    };              */
 
 
  var ViewModel = function(){
@@ -43,12 +43,12 @@ var model = {
             mapOptions);
 
 
-        var marker = new google.maps.Marker({
+      /*  var marker = new google.maps.Marker({
 
              this.position: {lat: 37.995207, lng: 23.763363},
              this.map: self.map,
              this.title: model.mapOptions.name
-            });
+            });*/
 
       }
 
