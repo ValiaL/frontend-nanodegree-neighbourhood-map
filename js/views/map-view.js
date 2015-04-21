@@ -2,9 +2,14 @@
 /*jshint unused:false */
 var app = app || {};
 
+/*
+function latlng(lat,lng) {
+  return new google.maps.LatLng(lat,lng);
+}
+*/
 var model = {
        name : 'Yellow Cafe',
-       mapOptions = {
+      var mapOptions = {
             center: { lat: 37.995207, lng: 23.763363},
             zoom: 16
             } 
