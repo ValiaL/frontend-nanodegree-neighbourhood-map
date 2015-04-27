@@ -1,11 +1,46 @@
+
+
 <!DOCTYPE html>
 <html>
   <head>
-   <!-- <style type="text/css">
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <title>Simple markers</title>
+    <style>
+     html { height: 100% }
+     body { height: 100%; margin: 0; padding: 0 }
+     #map-canvas {float: right; height: 100%; width:75%;}
+    </style>
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&signed_in=true"></script>
+  </head>
+  <body>
+    <div id="map-canvas"></div>
+    <div id="date" float = "left">
+      <span data-bind="text: now"></span>
+     <!-- <time datetime="2011-11" id="date" data-bind="value:todayDay"></time>-->
+    </div>
+    <div id="search_side" float = "left">
+      <input placeholder="Search…" type="search" data-bind="value: query, valueUpdate: 'keyup'" autocomplete="off">
+    </div>
+    <script type='text/javascript' src='.\bower_components/moment/moment.js'></script>
+    <script type='text/javascript' src='.\bower_components/knockout/dist/knockout-3.2.0.js'></script>
+    <script src="js/views/map-view.js"></script>
+  </body>
+</html>
+
+
+
+
+
+<!--  <!DOCTYPE html> 
+  <html>
+  <head>
+    <style type="text/css">
       html, body, #map-canvas { height: 100%; margin: 0; padding: 0;}
-    </style>-->
+    </style>
     <script type="text/javascript"
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB7wdiNEUHIyYE46AdFF8u7SraThxGK9DY">
+      src="https://maps.googleapis.com/maps/api/js?sensor=SET_TO_TRUE_OR_FALSE">
+    /*  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB7wdiNEUHIyYE46AdFF8u7SraThxGK9DY"> */
     </script>
   </head>
   <body>
@@ -15,8 +50,8 @@
     <input placeholder="Search…" type="search" data-bind="value: query, valueUpdate: 'keyup'" autocomplete="off">
   </div>
   <script src="js/views/map-view.js"></script>
-  <!--<script src="js/models/model.js"></script>
+  <script src="js/models/model.js"></script>
   <script src="bower_components/jquery/jquery.js"></script>
-  <script src="js/app.js"></script>  -->
+  <script src="js/app.js"></script>  
   </body>
-</html>
+</html>  -->
