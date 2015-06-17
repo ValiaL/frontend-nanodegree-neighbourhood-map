@@ -19,7 +19,7 @@
       <span data-bind="text: now"></span>
      <!-- <time datetime="2011-11" id="date" data-bind="value:todayDay"></time>-->
     </div>
-    <div id="search_side" float = "left">
+    <div id="search_side" float = "left" data-bind="foreach: locations">
       <input placeholder="Search…" type="search" data-bind="value: query, valueUpdate: 'keyup'" autocomplete="off">
     </div>
     <script type='text/javascript' src='.\bower_components/moment/moment.js'></script>
